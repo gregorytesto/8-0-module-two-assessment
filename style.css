@@ -1,0 +1,51 @@
+/* body > * {
+    border: 1px solid black;
+} */
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "dropdown ."
+    "displayInfo displayInfo"
+    "review review";
+    grid-gap: 10px;
+    background-color: lavender;
+    font-family: monospace;
+    width: 75%;
+    margin: 10px auto;
+}
+
+header{
+    background-color: skyblue;
+    grid-area: header;
+}
+
+header img{
+    width: 300px;
+}
+
+#dropdown{
+    grid-area: dropdown;
+    text-align: center;
+}
+#dropdown select{
+    width:200px;
+}
+
+#display-info{
+    grid-area: displayInfo;
+    min-height: 50px;
+}
+
+#review{
+    grid-area: review;
+    text-align: center;
+}
+#review input[type="submit"]{
+    width:200px;
+}
+
+#dropdown, #display-info, #review{
+    padding: 10px;
+}
